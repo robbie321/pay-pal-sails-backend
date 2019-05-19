@@ -13,6 +13,7 @@ module.exports = {
     };
     const payment = {};
     payment.amount = req.body.data.amount;
+    payment.title = req.body.data.title;
     const { paymentID } = req.body.data;
     PayPalService.paymentPaypal(
       paymentID,

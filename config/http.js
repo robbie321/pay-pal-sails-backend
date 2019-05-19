@@ -18,9 +18,6 @@ module.exports.http = {
    * https://sailsjs.com/documentation/concepts/middleware                     *
    *                                                                           *
    *************************************************************************** */
-  customMiddleware(app) {
-    app.enable('trust proxy');
-  },
 
   middleware: {
     /** *************************************************************************

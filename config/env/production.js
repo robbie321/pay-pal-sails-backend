@@ -45,9 +45,9 @@ module.exports = {
      *                                                                          *
      ************************************************************************** */
     default: {
-      adapter: "sails-mongo",
+      adapter: 'sails-mongo',
       url:
-        "mongodb://robbiem:Munster50@paypal-shard-00-00-hp5gp.mongodb.net:27017,paypal-shard-00-01-hp5gp.mongodb.net:27017,paypal-shard-00-02-hp5gp.mongodb.net:27017/test?ssl=true&replicaSet=paypal-shard-0&authSource=admin&retryWrites=true",
+        'mongodb://robbiem:Munster50@paypal-shard-00-00-hp5gp.mongodb.net:27017,paypal-shard-00-01-hp5gp.mongodb.net:27017,paypal-shard-00-02-hp5gp.mongodb.net:27017/test?ssl=true&replicaSet=paypal-shard-0&authSource=admin&retryWrites=true',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -68,8 +68,8 @@ module.exports = {
        * https://sailsjs.com/config/datastores                                     *
        *                                                                           *
        *************************************************************************** */
-      ssl: true
-    }
+      ssl: true,
+    },
   },
 
   models: {
@@ -84,7 +84,7 @@ module.exports = {
      * https://sailsjs.com/docs/concepts/models-and-orm/model-settings#?migrate *
      *                                                                          *
      ************************************************************************** */
-    migrate: "safe"
+    migrate: 'safe',
     // connection: "productionMongo"
 
     /** *************************************************************************
@@ -110,7 +110,7 @@ module.exports = {
    *                                                                         *
    ************************************************************************** */
   blueprints: {
-    shortcuts: false
+    shortcuts: false,
   },
 
   /** *************************************************************************
@@ -138,9 +138,9 @@ module.exports = {
      ************************************************************************** */
     cors: {
       allRoutes: true,
-      allowOrigins: "*",
-      allowCredentials: false
-    }
+      allowOrigins: '*',
+      allowCredentials: false,
+    },
   },
 
   /** *************************************************************************
@@ -207,8 +207,8 @@ module.exports = {
      ************************************************************************** */
     cookie: {
       // secure: true,
-      maxAge: 24 * 60 * 60 * 1000 // 24 hours
-    }
+      maxAge: 24 * 60 * 60 * 1000, // 24 hours
+    },
   },
 
   /** ************************************************************************
@@ -226,7 +226,7 @@ module.exports = {
       // `true` allows the socket to connect.
       // (`false` would reject the connection)
       return proceed(undefined, true);
-    }
+    },
     /** *************************************************************************
      *                                                                          *
      * Uncomment the `onlyAllowOrigins` whitelist below to configure which      *
@@ -273,7 +273,7 @@ module.exports = {
    *                                                                         *
    ************************************************************************** */
   log: {
-    level: "debug"
+    level: 'debug',
   },
 
   http: {
@@ -300,7 +300,7 @@ module.exports = {
      * (https://sailsjs.com/config/http)                                        *
      *                                                                          *
      ************************************************************************** */
-    trustProxy: true
+    trustProxy: true,
   },
 
   /** ************************************************************************
@@ -342,8 +342,8 @@ module.exports = {
    *                                                                         *
    ************************************************************************** */
   custom: {
-    baseUrl: "https://example.com",
-    internalEmailAddress: "support@example.com"
+    baseUrl: 'https://example.com',
+    internalEmailAddress: 'support@example.com',
 
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
@@ -359,5 +359,5 @@ module.exports = {
     // sails_custom__stripeSecret=sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm
     // ```
     //--------------------------------------------------------------------------
-  }
+  },
 };

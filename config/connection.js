@@ -1,13 +1,13 @@
 module.exports = {
   // this is the default connection
   localDiskDb: {
-    adapter: "sails-disk"
+    adapter: 'sails-disk',
   },
 
-  //custom connection for production
+  // custom connection for production
   productionMongo: {
-    adapter: "sails-mongo",
+    adapter: 'sails-mongo',
     // host: "heroku",
-    url: process.env.MONGODB_URI
-  }
+    url: process.env.MONGODB_URI,
+  },
 };
