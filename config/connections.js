@@ -7,7 +7,7 @@ module.exports = {
   //custom connection for production
   productionMongo: {
     adapter: "sails-mongo",
-    host: "heroku",
+    // host: "heroku",
     url: process.env.MONGODB_URI
   }
 };
