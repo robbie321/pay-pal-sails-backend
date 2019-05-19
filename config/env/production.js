@@ -81,8 +81,8 @@ module.exports = {
      * https://sailsjs.com/docs/concepts/models-and-orm/model-settings#?migrate *
      *                                                                          *
      ************************************************************************** */
-    migrate: "safe",
-    connection: "productionMongo"
+    migrate: "safe"
+    // connection: "productionMongo"
 
     /** *************************************************************************
      *                                                                          *
@@ -151,8 +151,8 @@ module.exports = {
    *                                                                          *
    ************************************************************************** */
   session: {
-    adapter: "connect-mongo",
-    url: process.env.MONGODB_URI,
+    // adapter: "connect-mongo",
+    // url: process.env.MONGODB_URI,
     /** *************************************************************************
      *                                                                          *
      * Production session store configuration.                                  *
