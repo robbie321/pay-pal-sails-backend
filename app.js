@@ -29,15 +29,9 @@ process.chdir(__dirname);
 let sails;
 let rc;
 try {
-  var PORT = process.env.PORT || 5000;
+  // var PORT = process.env.PORT || 5000;
   sails = require("sails");
   rc = require("sails/accessible/rc");
-
-  var http = require("http");
-  var server = http.Server(app);
-  server.listen(PORT, function() {
-    console.log("Chat server running");
-  });
 } catch (err) {
   console.error("Encountered an error when attempting to require('sails'):");
   console.error(err.stack);
