@@ -73,6 +73,7 @@ module.exports = {
   },
 
   models: {
+    connection: "productionMongo",
     /** *************************************************************************
      *                                                                          *
      * To help avoid accidents, Sails automatically sets the automigration      *
