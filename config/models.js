@@ -14,7 +14,6 @@
  */
 
 module.exports.models = {
-  // connection: "mongodb",
   /** *************************************************************************
    *                                                                          *
    * Whether model methods like `.create()` and `.update()` should ignore     *

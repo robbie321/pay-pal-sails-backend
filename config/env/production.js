@@ -73,7 +73,7 @@ module.exports = {
   },
 
   models: {
-    // connection: "productionMongo",
+    scheme: true,
     /** *************************************************************************
      *                                                                          *
      * To help avoid accidents, Sails automatically sets the automigration      *
@@ -137,9 +137,9 @@ module.exports = {
      *                                                                          *
      ************************************************************************** */
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allRoutes: true,
+      allowOrigins: "*",
+      allowCredentials: false
     }
   },
 
@@ -222,6 +222,11 @@ module.exports = {
    *                                                                          *
    ************************************************************************** */
   sockets: {
+    beforeConnect(handshake, proceed) {
+      // `true` allows the socket to connect.
+      // (`false` would reject the connection)
+      return proceed(undefined, true);
+    }
     /** *************************************************************************
      *                                                                          *
      * Uncomment the `onlyAllowOrigins` whitelist below to configure which      *
@@ -307,7 +312,7 @@ module.exports = {
    * this, just try deploying without setting it and see if it works.)       *
    *                                                                         *
    ************************************************************************** */
-  port: 80,
+  port: process.env.PORT || 8202,
 
   /** ************************************************************************
    *                                                                         *
