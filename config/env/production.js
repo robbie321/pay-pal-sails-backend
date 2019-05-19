@@ -20,6 +20,7 @@
  */
 
 module.exports = {
+  // NODE_ENV=production,
   /** ************************************************************************
    *                                                                         *
    * Tell Sails what database(s) it should use in production.                *
@@ -44,8 +45,9 @@ module.exports = {
      *                                                                          *
      ************************************************************************** */
     default: {
-      // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
+      adapter: "sails-mongo",
+      url:
+        "mongodb://robbiem:Munster50@paypal-shard-00-00-hp5gp.mongodb.net:27017,paypal-shard-00-01-hp5gp.mongodb.net:27017,paypal-shard-00-02-hp5gp.mongodb.net:27017/test?ssl=true&replicaSet=paypal-shard-0&authSource=admin&retryWrites=true",
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -66,7 +68,7 @@ module.exports = {
        * https://sailsjs.com/config/datastores                                     *
        *                                                                           *
        *************************************************************************** */
-      // ssl: true,
+      ssl: true
     }
   },
 
@@ -304,7 +306,7 @@ module.exports = {
    * this, just try deploying without setting it and see if it works.)       *
    *                                                                         *
    ************************************************************************** */
-  // port: 80,
+  port: 80,
 
   /** ************************************************************************
    *                                                                         *

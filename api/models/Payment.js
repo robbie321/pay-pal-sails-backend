@@ -8,16 +8,16 @@
 module.exports = {
   attributes: {
     amount: {
-      type: 'integer',
+      type: "number"
     },
     email: {
-      type: 'string',
+      type: "string"
     },
     first_name: {
-      type: 'string',
+      type: "string"
     },
     last_name: {
-      type: 'string',
-    },
-  },
+      type: "string"
+    }
+  }
 };
