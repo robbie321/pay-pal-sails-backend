@@ -9,7 +9,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "firebase": "^6.0.2",
-    "mongoose": "^5.5.9",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "paypal-rest-sdk": "^1.8.1",
     "radis": "^1.0.5",
